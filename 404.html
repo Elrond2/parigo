@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Parigo</title><meta name="robots" content="noindex"><meta name="color-scheme" content="light dark">
+<style>/* Parigo: estilo del sitio. Sin fuentes externas, sin JavaScript. */
+:root {
+  --morado: #6B3FD4;
+  --morado-osc: #4F25A8;
+  --ambar: #FFB020;
+  --lila: #D4C5FF;
+  --fondo: #FBFAFF;
+  --tarjeta: #FFFFFF;
+  --texto: #1D1830;
+  --suave: #555069;
+  --borde: #E2DCF3;
+  --enlace: #5B2FC2;
+  --cabecera-tabla: #F1EDFB;
+  --radio: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #14101F;
+    --tarjeta: #1D1830;
+    --texto: #EEEAF8;
+    --suave: #B8B0CF;
+    --borde: #352D50;
+    --enlace: #D4C5FF;
+    --cabecera-tabla: #2A2342;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--texto);
+  font: 1.0625rem/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--enlace); text-underline-offset: 0.15em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible, .tabla:focus-visible {
+  outline: 3px solid var(--ambar);
+  outline-offset: 2px;
+}
+h1, h2, h3 { line-height: 1.25; margin: 2em 0 0.6em; }
+h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); margin-top: 0; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.15rem; }
+p, ul, ol { margin: 0 0 1em; }
+li { margin-bottom: 0.4em; }
+hr { border: 0; border-top: 1px solid var(--borde); margin: 2em 0; }
+code { font: 0.92em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--cabecera-tabla); padding: 0.1em 0.3em; border-radius: 4px; }
+blockquote { margin: 1em 0; padding: 0.2em 1em; border-left: 4px solid var(--morado); color: var(--suave); }
+
+.envoltorio { width: 100%; max-width: 62rem; margin: 0 auto; padding: 0 16px; }
+.saltar {
+  position: absolute; left: 8px; top: -4rem; z-index: 20;
+  background: var(--ambar); color: #1B1030; padding: 0.6rem 1rem; border-radius: 8px; font-weight: 700;
+}
+.saltar:focus { top: 8px; }
+
+/* Cabecera y pie */
+.cabecera { background: linear-gradient(135deg, var(--morado), var(--morado-osc)); color: #fff; }
+.cabecera a { color: #fff; }
+.cabecera .barra { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1.25rem; padding-top: 0.7rem; padding-bottom: 0.7rem; }
+.marca { display: inline-flex; align-items: center; gap: 0.6rem; font-weight: 700; font-size: 1.2rem; text-decoration: none; }
+.marca img { border-radius: 22%; }
+.cabecera nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.1rem; font-size: 0.97rem; }
+.cabecera nav a[aria-current="page"] { font-weight: 700; text-decoration-thickness: 2px; }
+
+.pie { border-top: 1px solid var(--borde); margin-top: 4rem; padding: 2rem 0 3rem; color: var(--suave); font-size: 0.95rem; }
+.pie nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; margin-bottom: 1rem; }
+.pie p { margin: 0 0 0.5rem; }
+.pie .menor { font-size: 0.85rem; }
+
+/* Portada */
+.hero { background: linear-gradient(135deg, var(--morado), var(--morado-osc)); color: #fff; padding: 2.5rem 0 3.5rem; }
+.hero .envoltorio { display: grid; gap: 1.25rem; justify-items: start; }
+.hero h1 { margin: 0; color: #fff; }
+.hero .icono { border-radius: 22%; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3); }
+.hero .lema { font-size: 1.35rem; font-weight: 600; margin: 0; color: #fff; }
+.hero .lede { max-width: 40rem; margin: 0; color: #F1EBFF; }
+.boton, .proximamente {
+  display: inline-block; padding: 0.7rem 1.3rem; border-radius: 999px; font-weight: 700; text-decoration: none; margin: 0;
+}
+.boton { background: var(--ambar); color: #1B1030; }
+.boton:hover { background: #FFC24D; }
+.proximamente { border: 2px solid var(--lila); color: #fff; }
+
+.seccion { padding-top: 1rem; }
+.seccion > .envoltorio > h2:first-child { margin-top: 2.5rem; }
+.rejilla { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr)); margin-top: 1rem; }
+.tarjeta { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: var(--radio); padding: 1.1rem 1.25rem; }
+.tarjeta h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+.tarjeta p:last-child, .tarjeta ul:last-child { margin-bottom: 0; }
+.tarjeta ul { padding-left: 1.2rem; }
+.tarjeta.destacada { border: 2px solid var(--morado); }
+.precio { font-size: 1.35rem; font-weight: 700; margin: 0 0 0.5rem; }
+.aviso { background: var(--tarjeta); border-left: 5px solid var(--ambar); border-radius: 8px; padding: 0.9rem 1.2rem; margin-top: 2rem; }
+.capturas { display: flex; gap: 1rem; overflow-x: auto; padding: 0.25rem 0 1rem; }
+.capturas img { height: 26rem; width: auto; border-radius: var(--radio); border: 1px solid var(--borde); }
+
+/* Texto largo: soporte y legales */
+.texto { max-width: 70ch; padding-top: 2.5rem; overflow-wrap: anywhere; }
+.texto h2 { margin-top: 2em; }
+.indice { padding-left: 1.2rem; }
+.contacto { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: var(--radio); padding: 1rem 1.25rem; margin: 1.5rem 0; }
+.contacto p { margin: 0; }
+
+.tabla { overflow-x: auto; margin: 1.25rem 0; border: 1px solid var(--borde); border-radius: 8px; }
+.tabla table { border-collapse: collapse; min-width: 52rem; width: 100%; overflow-wrap: normal; word-break: normal; font-size: 0.93rem; line-height: 1.45; }
+.tabla th:first-child, .tabla td:first-child { min-width: 9rem; }
+.tabla th:last-child, .tabla td:last-child { min-width: 6rem; }
+.tabla th, .tabla td { padding: 0.6rem 0.75rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--borde); }
+.tabla th { background: var(--cabecera-tabla); }
+.tabla tr:last-child td { border-bottom: 0; }
+
+/* Borrador de textos legales */
+.borrador-banda { background: #B3261E; color: #fff; text-align: center; font-weight: 700; padding: 0.6rem 1rem; position: sticky; top: 0; z-index: 10; }
+mark.marcador { background: var(--ambar); color: #1B1030; padding: 0 0.2em; border-radius: 3px; outline: 2px dashed #B3261E; }
+
+@media (max-width: 36rem) {
+  body { font-size: 1rem; }
+  .capturas img { height: 20rem; }
+}
+@media print {
+  .cabecera, .saltar, .borrador-banda { display: none; }
+  body { background: #fff; color: #000; }
+}
+</style></head>
+<body class="pag-404"><main class="envoltorio texto" style="padding-top:4rem">
+<h1>No encontramos esta página</h1>
+<p>La dirección no existe o ha cambiado. <a href="https://elrond2.github.io/parigo/">Ir al inicio de Parigo</a>.</p>
+<h1 lang="en">We could not find this page</h1>
+<p lang="en">The address does not exist or has changed. <a href="https://elrond2.github.io/parigo/en/index.html">Go to the Parigo home page</a>.</p>
+</main></body></html>
