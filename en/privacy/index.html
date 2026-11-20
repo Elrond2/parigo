@@ -46,14 +46,14 @@ third-party advertising or purchase service</strong> (neither Google's consent f
 <li>Parigo is free and, <strong>from age 16, shows ads</strong> (a small banner). Google AdMob serves them. Where needed, Google first
 shows you a consent form, and Parigo only requests ads when Google's SDK indicates that it may: after you have made
 your choice in the form, or where the form is not required. <strong>Declining in the form does not remove the ads:</strong> Google
-may serve limited ads in line with your choice. Removing the ads is what the subscription does. <strong>We ask Google for
+may serve limited ads in line with your choice. Removing the ads is what the "No ads" purchase does. <strong>We ask Google for
 non-personalised ads</strong> with G-rated content (at 16 and 17, also with its treatment for adolescents). <strong>Under-16s are
 not shown advertising.</strong> The app <strong>does not ask for iOS's tracking permission</strong> (ATT) and does not access the
 advertising identifier (IDFA).</li>
-<li>There is an <strong>optional "No ads" subscription</strong>, from age 16. Apple charges for it and manages it. RevenueCat checks
-whether it is active using a random identifier of the app, with no name or email.</li>
+<li>There is an <strong>optional one-time "No ads" purchase</strong> (a single payment, no renewals), from age 16. Apple charges for it
+and manages it. RevenueCat checks whether you have it using a random identifier of the app, with no name or email.</li>
 <li><strong>Parigo does not send Google or RevenueCat the content of your accounts, transactions, amounts, names or groups.</strong>
-They do receive the technical and subscription data described in sections 4 to 6.</li>
+They do receive the technical and purchase data described in sections 4 to 6.</li>
 <li>Sharing a group is an exchange of files that you do by hand. Parigo does not sync anything on its own.</li>
 </ul>
 <h2 id="2-who-is-responsible-and-how-to-contact-us">2. Who is responsible and how to contact us</h2>
@@ -63,7 +63,7 @@ Sevilla (España). Tax ID (NIF): 30263193T. Contact: <a href="mailto:soporte@par
 <h2 id="3-what-data-is-stored-on-your-device">3. What data is stored on your device</h2>
 <p>What you enter is stored on the device itself, in the app's private storage, which other apps cannot access: accounts and
 their opening balance, transactions (amounts, dates, descriptions, categories), budgets, goals, groups and the names you
-type for their participants, recurring costs and your settings. Your <strong>year of birth</strong> (section 13) is also stored here,
+type for their participants, recurring costs and income (personal ones too) and your settings. Your <strong>year of birth</strong> (section 13) is also stored here,
 and only here: it is sent to nobody and is not included in private backups or exports.</p>
 <p><strong>System backups.</strong> Parigo asks the system <strong>not</strong> to include its data in the iPhone backup or in iCloud. According to
 Apple, that flag is only guidance to the system and does not guarantee that the data will never appear in a backup or on
@@ -82,10 +82,10 @@ and opening the web pages of the policy, the terms and support.</p>
 <div class="tabla" role="region" aria-label="Table" tabindex="0"><table>
 <thead><tr><th scope="col">To whom</th><th scope="col">When</th><th scope="col">What it receives</th><th scope="col">More information</th></tr></thead>
 <tbody>
-<tr><td><strong>Google</strong> (consent form, UMP)</td><td>When Parigo opens, only if you are 16 or over according to the year of birth you gave and do not have an active subscription, to find out whether the form needs to be shown to you. For under-16s it is not started</td><td>Google processes technical connection data (such as your IP address) and stores your consent choice so that the form works. Google does not publish a detailed list of the data this form processes</td><td>Sections 5, 12 and 14</td></tr>
-<tr><td><strong>Google</strong> (ads, AdMob)</td><td>Only if you are 16 or over according to the year of birth you gave, do not have an active subscription and a screen with a banner is in view (Home, Analysis or Groups), and only when Google's SDK indicates that ads may be requested (after your choice in the form or where it is not required). For under-16s it is not started</td><td>According to Google's documentation, the ads SDK may process: crash logs, performance data, device identifiers, data about the ads you see, approximate location inferred from the IP, and interactions with the app and ads, such as launches and taps. With the treatment for adolescents (ages 16 and 17) Google turns off personalised ads and remarketing; it does not detail what other data it stops processing</td><td>Section 5</td></tr>
-<tr><td><strong>RevenueCat</strong></td><td>Only if you are 16 or over according to the year of birth you gave. When Parigo opens and when you return to it, when prices load, and when you buy or restore. Also if you never buy. For under-16s it is not started</td><td>A random identifier, your subscription and purchase data (the receipt Apple provides and its dates), the device model and iOS version, the Parigo version, the language and, when available, the country of the app store and the device identifier for vendors on iOS (IDFV), the status of iOS's tracking permission (which Parigo does not ask for) and technical connection data, such as the IP address</td><td>Section 6</td></tr>
-<tr><td><strong>Apple</strong> (App Store)</td><td>When you buy or manage the subscription</td><td>What Apple handles with your Apple account</td><td>Section 6</td></tr>
+<tr><td><strong>Google</strong> (consent form, UMP)</td><td>When Parigo opens, only if you are 16 or over according to the year of birth you gave and have not bought "No ads", to find out whether the form needs to be shown to you. For under-16s it is not started</td><td>Google processes technical connection data (such as your IP address) and stores your consent choice so that the form works. Google does not publish a detailed list of the data this form processes</td><td>Sections 5, 12 and 14</td></tr>
+<tr><td><strong>Google</strong> (ads, AdMob)</td><td>Only if you are 16 or over according to the year of birth you gave, have not bought "No ads" and a screen with a banner is in view (Home, Analysis or Groups), and only when Google's SDK indicates that ads may be requested (after your choice in the form or where it is not required). For under-16s it is not started</td><td>According to Google's documentation, the ads SDK may process: crash logs, performance data, device identifiers, data about the ads you see, approximate location inferred from the IP, and interactions with the app and ads, such as launches and taps. With the treatment for adolescents (ages 16 and 17) Google turns off personalised ads and remarketing; it does not detail what other data it stops processing</td><td>Section 5</td></tr>
+<tr><td><strong>RevenueCat</strong></td><td>Only if you are 16 or over according to the year of birth you gave. When Parigo opens and when you return to it, when prices load, and when you buy or restore. Also if you never buy. For under-16s it is not started</td><td>A random identifier, your purchase data (the receipt Apple provides and its dates), the device model and iOS version, the Parigo version, the language and, when available, the country of the app store and the device identifier for vendors on iOS (IDFV), the status of iOS's tracking permission (which Parigo does not ask for) and technical connection data, such as the IP address</td><td>Section 6</td></tr>
+<tr><td><strong>Apple</strong> (App Store)</td><td>When you buy or restore "No ads"</td><td>What Apple handles with your Apple account</td><td>Section 6</td></tr>
 <tr><td><strong>Public exchange-rate services</strong></td><td>Only when preparing or editing an expense or an income in another currency, if you have allowed the lookup and a rate is needed. It can happen even if you later cancel the form, and at any age</td><td>The date and the currency codes; as with any connection, your IP address</td><td>Section 8</td></tr>
 <tr><td><strong>The service hosting these pages</strong></td><td>If you open the policy, the terms or support from the app, at any age</td><td>What any website sees: your IP and technical browser details. The pages are hosted on GitHub Pages (GitHub, Inc.), which logs and stores the IP address of visitors for security purposes, according to its documentation, without stating how long. GitHub bases international transfers on standard contractual clauses and on the EU-US Data Privacy Framework</td><td>Sections 12 and 14</td></tr>
 <tr><td><strong>Your email app</strong></td><td>Only if you tap "Report this ad"</td><td>Parigo opens an email to <a href="mailto:soporte@parigo.app">soporte@parigo.app</a> with a ready-made subject. <strong>It adds no data about you or your device</strong>: only what you write and what your email service sends goes</td><td>Section 5</td></tr>
@@ -94,10 +94,10 @@ and opening the web pages of the policy, the terms and support.</p>
 </table></div>
 <h2 id="5-ads-and-consent">5. Ads and consent</h2>
 <ul>
-<li><strong>What you see.</strong> If you are 16 or over and do not have the subscription, a small banner labelled "Advertising" on
+<li><strong>What you see.</strong> If you are 16 or over and have not bought "No ads", a small banner labelled "Advertising" on
 Home, on Analysis and on the Groups list. Parigo only requests ads when Google's SDK indicates that it may (after you
 have made your choice in the consent form, or where the form is not required). It never appears when you record an
-expense or a payment, import a file, share, in settings or on the subscription screen. Parigo only requests banners,
+expense or a payment, import a file, share, in settings or on the "No ads" purchase screen. Parigo only requests banners,
 not full-screen ads. Parigo starts at most five ad requests per session, at least one minute apart. Automatic refresh
 and video ads are disabled for the AdMob banner ad unit.</li>
 <li><strong>Not personalised.</strong> For anyone who sees ads, Parigo asks Google for non-personalised ads, with no keywords or content
@@ -132,31 +132,31 @@ Google's documentation on its ad serving modes (<a href="https://developers.goog
 that mode no device identifiers or local storage are used for advertising purposes and the ad is not personalised; the
 IP address and technical data of the request (device type, app and system version, language) are still processed to
 deliver the ad, and Google uses them for technical purposes such as security and the detection of fraud and abuse. The
-legal basis for that case is in section 14. Removing the ads is what the subscription does (section 6). You can change
+legal basis for that case is in section 14. Removing the ads is what the "No ads" purchase does (section 6). You can change
 your choice at any time in Preferences → "Ad privacy options" and in "About this ad".</li>
 <li><strong>About this ad.</strong> Next to each ad there is a button that explains why you see it and lets you change your choice or
 report it. Reporting opens your email app (section 4).</li>
-<li><strong>Who sees no ads.</strong> People under 16 and anyone with an active "No ads" subscription. If Parigo cannot confirm your
-subscription at that moment, it does not request ads either. Nor are there ads before the year-of-birth question has
+<li><strong>Who sees no ads.</strong> People under 16 and anyone who has bought "No ads". If Parigo cannot confirm your
+purchase at that moment, it does not request ads either. Nor are there ads before the year-of-birth question has
 been answered, which is required because, without it, Parigo cannot know whether it should start third-party services.</li>
 <li><strong>If this changes.</strong> Parigo requests non-personalised ads. If it ever requested personalised ones, we would say so here
 first and ask for your permission.</li>
 <li><strong>More information.</strong> How Google handles data: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
 </ul>
-<h2 id="6-no-ads-subscription">6. "No ads" subscription</h2>
+<h2 id="6-no-ads-purchase">6. "No ads" purchase</h2>
 <ul>
-<li>The subscription is optional, monthly or yearly, and you buy it with your Apple account. <strong>Apple charges and handles the
-payment:</strong> we receive neither your card nor your name. It removes ads and adds no features. If, because of your
-privacy choice, you already see fewer ads or limited ads, the subscription removes them all; it adds no features. It is
-only offered from age 16: it is not offered to under-16s, because they do not see advertising (in Preferences they are
-told "You do not see advertising in Parigo"). Prices and terms: in the terms of use.</li>
-<li><strong>What RevenueCat processes.</strong> Only from age 16, Parigo uses RevenueCat to know whether the subscription is active and
-to restore it. RevenueCat receives a random identifier of the app, with no name or email, the subscription data and
-the purchase information (the receipt Apple provides and its dates) and technical connection data. In addition,
+<li>The purchase is optional, a one-time payment (no renewals), and you make it with your Apple account. <strong>Apple charges
+and handles the payment:</strong> we receive neither your card nor your name. It removes ads and adds no features. If, because
+of your privacy choice, you already see fewer ads or limited ads, the purchase removes them all; it adds no features.
+It is only offered from age 16: it is not offered to under-16s, because they do not see advertising (in Preferences
+they are told "You do not see advertising in Parigo"). Price and terms: in the terms of use.</li>
+<li><strong>What RevenueCat processes.</strong> Only from age 16, Parigo uses RevenueCat to know whether you have the purchase and to
+restore it. RevenueCat receives a random identifier of the app, with no name or email, the purchase data
+(the receipt Apple provides and its dates) and technical connection data. In addition,
 the SDK transmits technical device and app data, including the IDFV and storefront country when available. It also
 reports the iOS tracking-permission status, although Parigo does not request that permission. Parigo adds no custom
 attributes or advertising identifiers. It does so also for people who never buy, because Parigo asks it whether you
-have the subscription. Parigo sends RevenueCat none of the content of your accounts, transactions or groups, and has
+have the purchase. Parigo sends RevenueCat none of the content of your accounts, transactions or groups, and has
 the SDK's optional diagnostics switched off. Even though the identifier
 is random, it persists on your installation and RevenueCat links activity to it, so we treat this data as personal
 data. RevenueCat acts as a data processor on our behalf: its data processing agreement
@@ -164,14 +164,13 @@ data. RevenueCat acts as a data processor on our behalf: its data processing agr
 provides for standard contractual clauses for transfers. According to its policy, it stores the data on servers in the
 United States (Amazon Web Services). The legal bases are in section 14 and the retention in section 12. Its policy:
 <a href="https://www.revenuecat.com/privacy/">https://www.revenuecat.com/privacy/</a></li>
-<li><strong>What we receive.</strong> We receive sales information from Apple and subscription data linked to RevenueCat's random
-identifier, and not to your name or email. RevenueCat also gives us aggregated analytics on purchases and
-subscriptions (for example, how many subscriptions are active or how many renew). The purpose is the operation of the
-subscription and analysis of how it is doing.</li>
-<li><strong>No account is needed.</strong> The subscription is recovered with "Restore purchases" using your Apple account.</li>
-<li><strong>Cancelling.</strong> In the subscription settings of your Apple account (from Parigo, with "Manage subscription"). It stays
-active until the end of the period already paid. When the paid period ends, free use continues; ads may be shown
-according to your age and your choice in the form. Apple's policy: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+<li><strong>What we receive.</strong> We receive sales information from Apple and purchase data linked to RevenueCat's random
+identifier, and not to your name or email. RevenueCat also gives us aggregated analytics on purchases
+(for example, how many "No ads" purchases have been made). The purpose is the operation of the
+purchase and analysis of how it is doing.</li>
+<li><strong>No account is needed.</strong> The purchase is recovered with "Restore purchases" using your Apple account.</li>
+<li><strong>No renewal.</strong> It is a one-time payment: there are no renewals and nothing to cancel. Deleting the app does not void
+the purchase, which stays tied to your Apple account. Apple's policy: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
 </ul>
 <h2 id="7-bank-statements">7. Bank statements</h2>
 <p>To import transactions, you download the statement from your bank's website or app and choose the file in Parigo. The
@@ -259,22 +258,24 @@ after one minute). What Parigo reads from the clipboard does not leave the devic
 <h2 id="12-retention-and-deletion">12. Retention and deletion</h2>
 <p>Your data stays on your device for as long as you keep it there. You can delete it at any time by deleting the app.
 Exported copies you delete yourself wherever you stored them.</p>
-<p><strong>RevenueCat records</strong> (random identifier and subscription data), only if you are 16 or over:</p>
+<p><strong>RevenueCat records</strong> (random identifier and purchase data), only if you are 16 or over:</p>
 <ul>
-<li><strong>If you have never bought:</strong> the record is kept for as long as Parigo offers the subscription, because it is needed
-to check whether you have it each time you open the app. There is no automatic deletion for inactivity: we delete it
-when you ask us to (see below) and, in any case, if Parigo stops offering the subscription.</li>
-<li><strong>If you have bought:</strong> for as long as the subscription lasts and, afterwards, for the period needed to meet legal
-obligations and handle claims. We keep the accounting and tax documentation of sales, which comes from Apple, for up to
-6 years.</li>
+<li><strong>If you have never bought:</strong> the record is kept for as long as Parigo offers the "No ads" purchase, because it is
+needed to check whether you have it each time you open the app. There is no automatic deletion for inactivity: we
+delete it when you ask us to (see below) and, in any case, if Parigo stops offering the purchase.</li>
+<li><strong>If you have bought:</strong> for as long as the purchase record is kept, which is needed to recognise it when you open the
+app, reinstall or restore, and until you ask for it to be deleted; there is no fixed period, because the purchase does
+not expire. Afterwards, for the period needed to meet legal obligations and handle claims. We keep the accounting and
+tax documentation of sales, which comes from Apple, for up to 6 years.</li>
 <li><strong>If you ask for deletion:</strong> you can write to <a href="mailto:soporte@parigo.app">soporte@parigo.app</a> to exercise your rights over this data. We will answer
 your request within one month. Where erasure applies, we will carry it out without undue delay. So that we can find
 your record in RevenueCat, include your <strong>support code</strong> in the email: it is in Preferences → About, with a button to
 copy it. It is RevenueCat's random identifier; it does not carry your name or your email.</li>
 <li><strong>What you should know.</strong> Deleting the app does not delete the record RevenueCat holds about you. Deleting the record
-does not cancel your Apple subscription either: that is done in the subscription settings of your Apple account
-(section 6). And if you keep using Parigo after the deletion, the SDK creates a new anonymous record when it checks
-your subscription, as RevenueCat warns; if you do not want one to be created, uninstall Parigo.</li>
+does not void your purchase on Apple either, which stays tied to your Apple account (section 6); you may have to use
+"Restore purchases" for Parigo to recognise it again. And if you keep using Parigo after the deletion, the SDK
+creates a new anonymous record when it checks your purchase, as RevenueCat warns; if you do not want one to be
+created, uninstall Parigo.</li>
 </ul>
 <p><strong>Google.</strong> Google keeps ad and consent-form data under its own policies
 (<a href="https://policies.google.com/technologies/retention">https://policies.google.com/technologies/retention</a>); Google states, in general terms, that it anonymises part of the IP
@@ -293,12 +294,12 @@ correct it later in Preferences → "Year of birth" → "Change", and Parigo app
 Parigo works out age from the year alone and cautiously, as if you had not yet had your birthday in the current year.</p>
 <p><strong>What changes with age:</strong></p>
 <ul>
-<li><strong>Under 16:</strong> Parigo shows no advertising and does not offer the subscription (in Preferences it says "You do not see
+<li><strong>Under 16:</strong> Parigo shows no advertising and does not offer the "No ads" purchase (in Preferences it says "You do not see
 advertising in Parigo"). It does not start any third-party advertising or purchase service: neither Google's consent
 form, nor AdMob, nor RevenueCat. All it can use over the network is the optional exchange-rate lookup (section 8,
 which asks for permission first and sends no data about you beyond the IP address that any connection involves) and
 opening the web pages of the policy, the terms and support.</li>
-<li><strong>16 and 17:</strong> RevenueCat at start-up, to know whether there is a subscription; Google's form where applicable; ads
+<li><strong>16 and 17:</strong> RevenueCat at start-up, to know whether there is a purchase; Google's form where applicable; ads
 non-personalised, with Google's treatment for adolescents and with G-rated content. When requesting that treatment,
 Google receives an indication derived from your age (not the year).</li>
 <li><strong>18 or over:</strong> the same, but without the treatment for adolescents; in version 1.0.0, always non-personalised and
@@ -310,14 +311,14 @@ is required to continue.</li>
 <p>Parigo sets no minimum age of its own. In Spain, where processing is based on consent, children under 14 need the consent
 of whoever holds parental authority or guardianship. Other processing rests on the legal bases in section 14. The
 technical data processed by the purchase and advertising services is the data in section 4.</p>
-<p>If you are a parent or guardian and believe a child uses Parigo, write to <a href="mailto:soporte@parigo.app">soporte@parigo.app</a>. The subscription is only
-offered from age 16; it is bought by an adult, or by a 16 or 17-year-old with the authorisation of their parent or
+<p>If you are a parent or guardian and believe a child uses Parigo, write to <a href="mailto:soporte@parigo.app">soporte@parigo.app</a>. The "No ads" purchase is only
+offered from age 16; it is made by an adult, or by a 16 or 17-year-old with the authorisation of their parent or
 guardian, under the rules of the Apple account. "Ask to Buy" in Family Sharing is an example of an Apple purchase
 control: it is not the same as authorisation to process personal data and does not by itself check capacity to contract.</p>
 <h2 id="14-your-rights">14. Your rights</h2>
 <p>We do not hold the data you store in Parigo, so we cannot give you access to it, correct it or erase it: you hold it and
 control it on your device. For the data we do process (your email address, if you write to us, and the data of your
-subscription and purchase that RevenueCat processes, also if you never bought, from age 16) you may exercise your rights
+purchase that RevenueCat processes, also if you never bought, from age 16) you may exercise your rights
 of access, rectification, erasure, objection, restriction and portability by writing to <a href="mailto:soporte@parigo.app">soporte@parigo.app</a>. We will answer
 your request within one month. Where erasure applies, we will carry it out without undue delay. For RevenueCat data,
 include your support code (section 12). If you made a choice in Google's consent form, you can change or withdraw it at
@@ -329,12 +330,12 @@ not been respected, you may complain to the Spanish Data Protection Agency (<a h
 <li><strong>Year of birth:</strong> we process it only on your device, to meet child-protection obligations and, where applicable, on
 the basis of a legitimate interest in protecting minors by deciding, according to age, which third-party services are
 started. We do not receive it.</li>
-<li><strong>RevenueCat (from age 16):</strong> knowing at start-up whether an active subscription exists is necessary to decide whether
-ads are shown and to offer or restore the purchase; we also use the aggregated purchase and subscription analytics
+<li><strong>RevenueCat (from age 16):</strong> knowing at start-up whether the "No ads" purchase exists is necessary to decide whether
+ads are shown and to offer or restore the purchase; we also use the aggregated purchase analytics
 that RevenueCat gives us. The basis is legitimate interest, if you have never bought, and performance of a contract,
 if you buy. The balancing: we use a random identifier, with no name or email and no app content; you can ask us
 to delete your record at any time with your support code (section 12); it is not started for under-16s; and checking only
-when you tap "Buy" would not let us know in time that you already have the subscription so as not to show you ads. You
+when you tap "Buy" would not let us know in time that you already have the purchase so as not to show you ads. You
 can object by writing to <a href="mailto:soporte@parigo.app">soporte@parigo.app</a>.</li>
 <li><strong>Initial query to Google (form):</strong> legitimate interest in meeting the obligation to ask for your choice before
 requesting ads where it is required, and in not requesting them without it; it does not carry your year of birth.</li>
@@ -350,7 +351,7 @@ deliver the ad, and Google uses them for technical purposes such as security and
 Our purpose is to show a contextual ad that funds the free use of Parigo. The basis is the owner's legitimate
 interest in funding a free app with non-personalised, minimally intrusive advertising. The balancing: no profile, no
 advertising identifiers, no data from your accounts, only from age 16, G rating and sensitive categories blocked.
-You can object by writing to <a href="mailto:soporte@parigo.app">soporte@parigo.app</a>; the way to see no ads at all is the "No ads" subscription
+You can object by writing to <a href="mailto:soporte@parigo.app">soporte@parigo.app</a>; the way to see no ads at all is the "No ads" purchase
 (section 6).</li>
 <li><strong>Where the form is not required:</strong> the owner's legitimate interest in funding Parigo with non-personalised ads,
 with the same balancing and the same right to object.</li>
