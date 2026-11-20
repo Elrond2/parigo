@@ -41,7 +41,7 @@ move euros and does not connect to banks.</strong></li>
 <li><strong>What you enter is stored only on your device:</strong> transactions, accounts and groups, and the transactions you confirm
 when importing a bank file. There is no user account and no server of ours. We cannot see it.</li>
 <li>The first time it opens, Parigo asks for your <strong>year of birth</strong>. You must answer, it is stored only on your device, and
-you can correct it later in Preferences. <strong>Before you answer, and always if you are under 16, Parigo does not start any
+you can correct it later in Settings. <strong>Before you answer, and always if you are under 16, Parigo does not start any
 third-party advertising or purchase service</strong> (neither Google's consent form, nor AdMob, nor RevenueCat).</li>
 <li>Parigo is free and, <strong>from age 16, shows ads</strong> (a small banner). Google AdMob serves them. Where needed, Google first
 shows you a consent form, and Parigo only requests ads when Google's SDK indicates that it may: after you have made
@@ -55,6 +55,8 @@ and manages it. RevenueCat checks whether you have it using a random identifier 
 <li><strong>Parigo does not send Google or RevenueCat the content of your accounts, transactions, amounts, names or groups.</strong>
 They do receive the technical and purchase data described in sections 4 to 6.</li>
 <li>Sharing a group is an exchange of files that you do by hand. Parigo does not sync anything on its own.</li>
+<li><strong>Reminders</strong> for recurring costs are optional (they come switched off) and are notifications from the device itself:
+no server, no account. Exporting your transactions to CSV or PDF is also done on your device.</li>
 </ul>
 <h2 id="2-who-is-responsible-and-how-to-contact-us">2. Who is responsible and how to contact us</h2>
 <p>Owner and controller: Emilio Franco González, an individual (self-employed). Address: Calle Cueva de la Pileta 2, 41020
@@ -63,8 +65,25 @@ Sevilla (España). Tax ID (NIF): 30263193T. Contact: <a href="mailto:soporte@par
 <h2 id="3-what-data-is-stored-on-your-device">3. What data is stored on your device</h2>
 <p>What you enter is stored on the device itself, in the app's private storage, which other apps cannot access: accounts and
 their opening balance, transactions (amounts, dates, descriptions, categories), budgets, goals, groups and the names you
-type for their participants, recurring costs and income (personal ones too) and your settings. Your <strong>year of birth</strong> (section 13) is also stored here,
-and only here: it is sent to nobody and is not included in private backups or exports.</p>
+type for their participants, recurring costs and income (personal ones too), import rules (see below) and your
+settings. Your <strong>year of birth</strong> (section 13) is also stored here, and only here: it is sent to nobody and is not
+included in private backups or exports.</p>
+<p><strong>Import rules.</strong> If, when reviewing a statement, you choose "Always use this category for transactions like this one",
+Parigo saves a rule: a condition text and the category. The condition is text derived from the description the bank puts
+on the statement, so it may contain the names of other people or of shops. Rules are stored on your device and go into
+the private backups that you export (section 9); they are not sent to any server or any SDK. A rule suggests a
+category but never approves anything on its own: you review and approve, in bulk too. You can delete each rule on the
+"Import rules" screen.</p>
+<p><strong>Reminders for recurring costs and income (optional).</strong> Parigo can alert you with a notification on the day a recurring
+expense or income is due (and, if you choose, the day before). They come switched off: they exist only if you turn them
+on in Settings → "Reminders". They are local notifications: the device itself creates and shows them, with no server
+of ours, no push notification service and no account, and nothing is sent anywhere. By default the alert shows the
+description of the recurring item and <strong>not the amount</strong>; the amount is only shown if you turn on "Show the amount in
+the alert". <strong>Alerts already scheduled keep appearing when the app is locked</strong>, so the description (and the amount, if you
+have turned that on) may be visible on the device's lock screen. When you turn them on, iOS asks your permission to show
+notifications; Parigo does not ask before that. You can turn them off whenever you like in Settings → "Reminders":
+<strong>turning them off cancels all scheduled alerts</strong>. You can also withdraw the permission in iOS settings. The reminder
+settings are stored only on the device and are not included in private backups.</p>
 <p><strong>System backups.</strong> Parigo asks the system <strong>not</strong> to include its data in the iPhone backup or in iCloud. According to
 Apple, that flag is only guidance to the system and does not guarantee that the data will never appear in a backup or on
 a restored device; we cannot guarantee how each version of iOS will act. If the system does not allow it or the app
@@ -74,8 +93,9 @@ data.</strong></p>
 <h2 id="4-what-leaves-your-device-when-and-to-whom">4. What leaves your device, when and to whom</h2>
 <p>These are all of Parigo's automatic connections. <strong>None sends the content of your accounts, transactions, descriptions,
 amounts, names, groups, statements or files</strong> to our servers (there are none), to Google or to RevenueCat. Separately,
-there are things you can take out of the device on purpose: a private backup, a group you share, or information you copy
-to the clipboard. That leaves only if you choose it, and it is explained in sections 9 and 10.</p>
+there are things you can take out of the device on purpose: a private backup, a CSV or a PDF that you export, a group
+you share, or information you copy to the clipboard. That leaves only if you choose it, and it is explained in sections
+9 and 10. Reminders (section 3) are not a connection: the device itself creates and shows them.</p>
 <p>Before you answer the age question, and always if you are under 16, Parigo does not connect to Google or to RevenueCat.
 All it can then use over the network is the optional exchange-rate lookup (section 8, which asks for permission first)
 and opening the web pages of the policy, the terms and support.</p>
@@ -83,7 +103,7 @@ and opening the web pages of the policy, the terms and support.</p>
 <thead><tr><th scope="col">To whom</th><th scope="col">When</th><th scope="col">What it receives</th><th scope="col">More information</th></tr></thead>
 <tbody>
 <tr><td><strong>Google</strong> (consent form, UMP)</td><td>When Parigo opens, only if you are 16 or over according to the year of birth you gave and have not bought "No ads", to find out whether the form needs to be shown to you. For under-16s it is not started</td><td>Google processes technical connection data (such as your IP address) and stores your consent choice so that the form works. Google does not publish a detailed list of the data this form processes</td><td>Sections 5, 12 and 14</td></tr>
-<tr><td><strong>Google</strong> (ads, AdMob)</td><td>Only if you are 16 or over according to the year of birth you gave, have not bought "No ads" and a screen with a banner is in view (Home, Analysis or Groups), and only when Google's SDK indicates that ads may be requested (after your choice in the form or where it is not required). For under-16s it is not started</td><td>According to Google's documentation, the ads SDK may process: crash logs, performance data, device identifiers, data about the ads you see, approximate location inferred from the IP, and interactions with the app and ads, such as launches and taps. With the treatment for adolescents (ages 16 and 17) Google turns off personalised ads and remarketing; it does not detail what other data it stops processing</td><td>Section 5</td></tr>
+<tr><td><strong>Google</strong> (ads, AdMob)</td><td>Only if you are 16 or over according to the year of birth you gave, have not bought "No ads" and the ad area is in view (at the foot of Home, Groups, Recurring, Settings and the reading screens), and only when Google's SDK indicates that ads may be requested (after your choice in the form or where it is not required). For under-16s it is not started</td><td>According to Google's documentation, the ads SDK may process: crash logs, performance data, device identifiers, data about the ads you see, approximate location inferred from the IP, and interactions with the app and ads, such as launches and taps. With the treatment for adolescents (ages 16 and 17) Google turns off personalised ads and remarketing; it does not detail what other data it stops processing</td><td>Section 5</td></tr>
 <tr><td><strong>RevenueCat</strong></td><td>Only if you are 16 or over according to the year of birth you gave. When Parigo opens and when you return to it, when prices load, and when you buy or restore. Also if you never buy. For under-16s it is not started</td><td>A random identifier, your purchase data (the receipt Apple provides and its dates), the device model and iOS version, the Parigo version, the language and, when available, the country of the app store and the device identifier for vendors on iOS (IDFV), the status of iOS's tracking permission (which Parigo does not ask for) and technical connection data, such as the IP address</td><td>Section 6</td></tr>
 <tr><td><strong>Apple</strong> (App Store)</td><td>When you buy or restore "No ads"</td><td>What Apple handles with your Apple account</td><td>Section 6</td></tr>
 <tr><td><strong>Public exchange-rate services</strong></td><td>Only when preparing or editing an expense or an income in another currency, if you have allowed the lookup and a rate is needed. It can happen even if you later cancel the form, and at any age</td><td>The date and the currency codes; as with any connection, your IP address</td><td>Section 8</td></tr>
@@ -94,12 +114,17 @@ and opening the web pages of the policy, the terms and support.</p>
 </table></div>
 <h2 id="5-ads-and-consent">5. Ads and consent</h2>
 <ul>
-<li><strong>What you see.</strong> If you are 16 or over and have not bought "No ads", a small banner labelled "Advertising" on
-Home, on Analysis and on the Groups list. Parigo only requests ads when Google's SDK indicates that it may (after you
-have made your choice in the consent form, or where the form is not required). It never appears when you record an
-expense or a payment, import a file, share, in settings or on the "No ads" purchase screen. Parigo only requests banners,
-not full-screen ads. Parigo starts at most five ad requests per session, at least one minute apart. Automatic refresh
-and video ads are disabled for the AdMob banner ad unit.</li>
+<li><strong>What you see.</strong> If you are 16 or over and have not bought "No ads", a small banner labelled "Advertising" in a fixed
+area at the foot of the screen, between the content and the menu bar, on Home, Groups, Recurring and Settings and
+on the reading screens (for example accounts, transactions, analysis, planning and the detail of a group, an expense
+or a recurring item). Parigo only requests ads when Google's SDK indicates that it may (after you
+have made your choice in the consent form, or where the form is not required). It never appears on the Import tab or
+when you import a file, nor on forms (recording an expense or a payment, creating a recurring item or a group, etc.),
+nor on payments between people, when sharing, in private backups or on the passphrase unlock screen, nor while you
+make or restore the "No ads" purchase. Parigo only requests banners, not full-screen ads. Parigo starts at most twenty
+ad requests per session (this is only a safety brake), at least one minute apart. While an ad is in view, AdMob may
+refresh it automatically at the rate Google decides ("Optimised by Google"). Video ads are disabled for the AdMob
+banner ad unit.</li>
 <li><strong>Not personalised.</strong> For anyone who sees ads, Parigo asks Google for non-personalised ads, with no keywords or content
 addresses. Parigo does not send it your banks, transactions, amounts, names or groups. Non-personalised ads are not
 based on your past behaviour, but Google may still use device identifiers or cookies to limit how often ads are shown,
@@ -133,9 +158,9 @@ that mode no device identifiers or local storage are used for advertising purpos
 IP address and technical data of the request (device type, app and system version, language) are still processed to
 deliver the ad, and Google uses them for technical purposes such as security and the detection of fraud and abuse. The
 legal basis for that case is in section 14. Removing the ads is what the "No ads" purchase does (section 6). You can change
-your choice at any time in Preferences → "Ad privacy options" and in "About this ad".</li>
-<li><strong>About this ad.</strong> Next to each ad there is a button that explains why you see it and lets you change your choice or
-report it. Reporting opens your email app (section 4).</li>
+your choice at any time in Settings → "Ad privacy options" and in "About this ad".</li>
+<li><strong>About this ad.</strong> Next to each ad there is a button that explains why you see it and lets you change your choice,
+report it or go to "Remove ads" (the purchase, section 6). Reporting opens your email app (section 4).</li>
 <li><strong>Who sees no ads.</strong> People under 16 and anyone who has bought "No ads". If Parigo cannot confirm your
 purchase at that moment, it does not request ads either. Nor are there ads before the year-of-birth question has
 been answered, which is required because, without it, Parigo cannot know whether it should start third-party services.</li>
@@ -148,7 +173,7 @@ first and ask for your permission.</li>
 <li>The purchase is optional, a one-time payment (no renewals), and you make it with your Apple account. <strong>Apple charges
 and handles the payment:</strong> we receive neither your card nor your name. It removes ads and adds no features. If, because
 of your privacy choice, you already see fewer ads or limited ads, the purchase removes them all; it adds no features.
-It is only offered from age 16: it is not offered to under-16s, because they do not see advertising (in Preferences
+It is only offered from age 16: it is not offered to under-16s, because they do not see advertising (in Settings
 they are told "You do not see advertising in Parigo"). Price and terms: in the terms of use.</li>
 <li><strong>What RevenueCat processes.</strong> Only from age 16, Parigo uses RevenueCat to know whether you have the purchase and to
 restore it. RevenueCat receives a random identifier of the app, with no name or email, the purchase data
@@ -181,13 +206,15 @@ where you downloaded it, and uninstalling Parigo does not delete it. Parigo trie
 file picker creates when reading it. Imported transactions are not sent to any server or any SDK. They can leave the
 device only if you export a private backup (section 9) or copy them. Statements and imported transactions are not
 automatically incorporated into shared groups. If you classify a credit from a joint account as a refund of an expense
-related to a group, that expense is reduced or cancelled. That change is included in the group files you decide to share.</p>
+related to a group, that expense is reduced or cancelled. That change is included in the group files you decide to share.
+If you save import rules (for example, "always use this category"), they are stored on your device and in the private
+backups you export, and may contain text from the description the bank puts on the statement (section 3).</p>
 <h2 id="8-exchange-rate-lookups">8. Exchange-rate lookups</h2>
 <ul>
 <li><strong>When:</strong> only when preparing or editing an expense or an income in a currency different from your account's or
 group's, if you have not typed the rate yourself. The lookup starts when the form is prepared, without waiting for you to
 save, and can happen even if you later cancel it. The first time, the app explains it and asks for your permission. You
-can turn it off in Preferences and type rates by hand. This lookup is available at any age.</li>
+can turn it off in Settings and type rates by hand. This lookup is available at any age.</li>
 <li><strong>What is sent:</strong> the date of the expense and the currency codes. Amounts, descriptions, names and categories are
 <strong>never</strong> sent. The lookup adds no further identifiers of the user or the device; the provider receives the IP address
 needed for the connection.</li>
@@ -219,9 +246,12 @@ device. These are daily reference rates, not your bank's, and you can correct th
 <ul>
 <li><strong>Optional protection:</strong> you can protect what is stored with a passphrase of your choice. The passphrase is not stored
 anywhere. <strong>There is no passphrase recovery:</strong> if you forget it, nobody, including us, can open that data.</li>
-<li><strong>Private backup:</strong> you can export a file with everything you have entered. It is encrypted by default with a
-passphrase you type at that moment; to open it on another device you need the file and its passphrase. You can choose to
-export it unencrypted, with a warning: in that case anyone with the file can read it.</li>
+<li><strong>Private backup:</strong> you can export a file with everything you have entered, including your import rules. It is
+encrypted by default with a passphrase you type at that moment; to open it on another device you need the file and its
+passphrase. You can choose to export it unencrypted, with a warning: in that case anyone with the file can read it.</li>
+<li><strong>Exporting transactions (CSV or PDF):</strong> you can generate a CSV of your personal transactions, with filters, or a PDF
+report for a period. They are generated on your device and are not sent to any service: you save or share the file
+yourself with the system share sheet. It is not encrypted or protected by the passphrase.</li>
 <li>What you do with the file (keep it in a cloud service, send it by email or messaging) is subject to the terms of the
 service you choose. Parigo cannot delete or recover those files.</li>
 <li>Protection does not replace your device lock and does not protect what you have already exported unencrypted (CSV
@@ -249,7 +279,8 @@ the files are encrypted, the invitation is not.</li>
 anyone. No tracking permission. No sale of your data. No requests for personalised ads. No requests for access to the
 device's location, contacts, photos, microphone or camera. Apart from what is described in section 4, Parigo makes no
 other connections on its own.</p>
-<p>On iOS, Parigo does not ask for permission for the camera, microphone, contacts, photos, location or tracking. To pick a
+<p>On iOS, Parigo does not ask for permission for the camera, microphone, contacts, photos, location or tracking. The only
+permission it may ask for is notifications, and only when you turn on reminders (section 3). To pick a
 file and to send one, it uses the operating system's own file picker and share menu: it only accesses the file you
 choose. When you tap "Paste", Parigo reads the clipboard text to put it in the field; iOS may notify you or ask for
 confirmation when it does. In addition, after copying something sensitive (such as an invitation) or after pasting it,
@@ -269,7 +300,7 @@ not expire. Afterwards, for the period needed to meet legal obligations and hand
 tax documentation of sales, which comes from Apple, for up to 6 years.</li>
 <li><strong>If you ask for deletion:</strong> you can write to <a href="mailto:soporte@parigo.app">soporte@parigo.app</a> to exercise your rights over this data. We will answer
 your request within one month. Where erasure applies, we will carry it out without undue delay. So that we can find
-your record in RevenueCat, include your <strong>support code</strong> in the email: it is in Preferences → About, with a button to
+your record in RevenueCat, include your <strong>support code</strong> in the email: it is in Settings → About, with a button to
 copy it. It is RevenueCat's random identifier; it does not carry your name or your email.</li>
 <li><strong>What you should know.</strong> Deleting the app does not delete the record RevenueCat holds about you. Deleting the record
 does not void your purchase on Apple either, which stays tied to your Apple account (section 6); you may have to use
@@ -290,11 +321,11 @@ to be reopened or the reply evidenced; after that period we delete it, unless a 
 without that answer, Parigo cannot know whether it should start third-party advertising or purchase services, and until
 then it starts none. Only the year is stored, <strong>only on your device</strong>: it is sent to nobody and is not included in
 private backups or exports. It is your own declaration; Parigo does not check it. If you entered it wrongly, you can
-correct it later in Preferences → "Year of birth" → "Change", and Parigo applies what corresponds to the year stored.
+correct it later in Settings → "Year of birth" → "Change", and Parigo applies what corresponds to the year stored.
 Parigo works out age from the year alone and cautiously, as if you had not yet had your birthday in the current year.</p>
 <p><strong>What changes with age:</strong></p>
 <ul>
-<li><strong>Under 16:</strong> Parigo shows no advertising and does not offer the "No ads" purchase (in Preferences it says "You do not see
+<li><strong>Under 16:</strong> Parigo shows no advertising and does not offer the "No ads" purchase (in Settings it says "You do not see
 advertising in Parigo"). It does not start any third-party advertising or purchase service: neither Google's consent
 form, nor AdMob, nor RevenueCat. All it can use over the network is the optional exchange-rate lookup (section 8,
 which asks for permission first and sends no data about you beyond the IP address that any connection involves) and

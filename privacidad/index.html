@@ -57,6 +57,8 @@ la gestiona Apple. RevenueCat comprueba si la tienes con un identificador aleato
 <li><strong>Parigo no envía a Google ni a RevenueCat el contenido de tus cuentas, movimientos, importes, nombres ni grupos.</strong>
 Sí reciben los datos técnicos y de compra que se describen en los apartados 4 a 6.</li>
 <li>Compartir un grupo es un intercambio de ficheros que haces tú a mano. Parigo no sincroniza nada por su cuenta.</li>
+<li>Los <strong>recordatorios</strong> de gastos fijos son opcionales (vienen apagados) y son notificaciones del propio dispositivo: sin
+servidor, sin cuenta. Exportar tus movimientos a CSV o PDF también se hace en tu dispositivo.</li>
 </ul>
 <h2 id="2-quien-es-el-responsable-y-como-contactar">2. Quién es el responsable y cómo contactar</h2>
 <p>Titular y responsable: Emilio Franco González, persona física (profesional autónomo). Domicilio: Calle Cueva de la Pileta
@@ -65,8 +67,25 @@ Sí reciben los datos técnicos y de compra que se describen en los apartados 4 
 <h2 id="3-que-datos-se-guardan-en-tu-dispositivo">3. Qué datos se guardan en tu dispositivo</h2>
 <p>Lo que apuntas se guarda en el propio dispositivo, en el almacenamiento privado de la app, al que no accede otra app:
 cuentas y su saldo inicial, movimientos (importes, fechas, conceptos, categorías), presupuestos, objetivos, grupos y los
-nombres que escribes para sus participantes, gastos e ingresos fijos (también los personales) y tus ajustes. También se guarda aquí, y solo aquí, tu <strong>año de
-nacimiento</strong> (apartado 13): no se envía a nadie y no va en las copias privadas ni en las exportaciones.</p>
+nombres que escribes para sus participantes, gastos e ingresos fijos (también los personales), las reglas de importación
+(más abajo) y tus ajustes. También se guarda aquí, y solo aquí, tu <strong>año de nacimiento</strong> (apartado 13): no se envía a
+nadie y no va en las copias privadas ni en las exportaciones.</p>
+<p><strong>Reglas de importación.</strong> Si en la revisión de un extracto eliges «Usar siempre esta categoría para movimientos como
+este», Parigo guarda una regla: un texto de condición y la categoría. La condición es texto derivado del concepto que
+pone el banco en el extracto, así que puede contener nombres de otras personas o de comercios. Las reglas se guardan en
+tu dispositivo y van en las copias privadas que tú exportes (apartado 9); no se envían a ningún servidor ni a ningún
+SDK. Una regla propone una categoría, pero no aprueba nada por sí sola: revisas y apruebas tú, también en bloque. Puedes
+borrar cada regla en la pantalla «Reglas de importación».</p>
+<p><strong>Recordatorios de gastos e ingresos fijos (opcionales).</strong> Parigo puede avisarte con una notificación el día en que vence
+un gasto o un ingreso fijo (y, si lo eliges, el día antes). Vienen apagados: solo existen si los activas en Preferencias
+→ «Recordatorios». Son notificaciones locales: las crea y las muestra el propio dispositivo, sin servidor nuestro, sin
+servicio de notificaciones push y sin cuenta, y no se envía nada fuera. De serie el aviso enseña el concepto del fijo y
+<strong>no el importe</strong>; el importe solo se ve si activas «Mostrar el importe en el aviso». <strong>Los avisos ya programados siguen
+saliendo con la app bloqueada</strong>, de modo que el concepto (y el importe, si lo has activado) puede verse en la pantalla
+bloqueada del dispositivo. Al activarlos, iOS te pide permiso para mostrar notificaciones; Parigo no lo pide antes.
+Puedes apagarlos cuando quieras en Preferencias → «Recordatorios»: <strong>al apagarlos se cancelan todos los avisos
+programados</strong>. También puedes retirar el permiso en los ajustes de iOS. Los ajustes de los recordatorios se guardan solo
+en el dispositivo y no van en las copias privadas.</p>
 <p><strong>Copias de seguridad del sistema.</strong> Parigo pide al sistema que <strong>no</strong> incluya sus datos en la copia del iPhone ni en
 iCloud. Según Apple, esa marca es solo una indicación al sistema y no garantiza que esos datos nunca aparezcan en una
 copia o en un dispositivo restaurado; no podemos garantizar cómo actuará cada versión de iOS. Si el sistema no la admite
@@ -76,8 +95,10 @@ pierdes esos datos.</strong></p>
 <h2 id="4-que-sale-de-tu-dispositivo-cuando-y-a-quien">4. Qué sale de tu dispositivo, cuándo y a quién</h2>
 <p>Estas son todas las conexiones automáticas de Parigo. <strong>Ninguna envía el contenido de tus cuentas, movimientos,
 conceptos, importes, nombres, grupos, extractos o ficheros</strong> a nuestros servidores (no los hay), a Google ni a
-RevenueCat. Aparte, hay cosas que puedes sacar tú del dispositivo a propósito: una copia privada, un grupo que compartes
-o información que copias al portapapeles. Eso sale solo si tú lo eliges, y se explica en los apartados 9 y 10.</p>
+RevenueCat. Aparte, hay cosas que puedes sacar tú del dispositivo a propósito: una copia privada, un CSV o un PDF que
+exportas, un grupo que compartes o información que copias al portapapeles. Eso sale solo si tú lo eliges, y se explica
+en los apartados 9 y 10. Los recordatorios (apartado 3) no son una conexión: los crea y los muestra el propio
+dispositivo.</p>
 <p>Antes de que contestes la pregunta de edad, y siempre si tienes menos de 16 años, Parigo no se conecta a Google ni a
 RevenueCat. Lo único de red que puede usar entonces es la consulta opcional de tipos de cambio (apartado 8, que pide
 permiso antes) y abrir las páginas web de la política, las condiciones y el soporte.</p>
@@ -85,7 +106,7 @@ permiso antes) y abrir las páginas web de la política, las condiciones y el so
 <thead><tr><th scope="col">A quién</th><th scope="col">Cuándo</th><th scope="col">Qué recibe</th><th scope="col">Más información</th></tr></thead>
 <tbody>
 <tr><td><strong>Google</strong> (formulario de consentimiento, UMP)</td><td>Al abrir Parigo, solo si tienes 16 años o más según el año de nacimiento que indicaste y no has comprado «Sin anuncios», para saber si hay que mostrarte el formulario. A menores de 16 años no se pone en marcha</td><td>Google trata datos técnicos de la conexión (como tu dirección IP) y guarda tu elección de consentimiento para que el formulario funcione. Google no publica una lista detallada de los datos que trata este formulario</td><td>Apartados 5, 12 y 14</td></tr>
-<tr><td><strong>Google</strong> (anuncios, AdMob)</td><td>Solo si tienes 16 años o más según el año de nacimiento que indicaste, no has comprado «Sin anuncios» y hay a la vista una pantalla con banner (Inicio, Análisis o Grupos), y solo cuando el SDK de Google indica que se pueden pedir anuncios (después de tu elección en el formulario o donde no se exige). A menores de 16 años no se pone en marcha</td><td>Según la documentación de Google, el SDK de anuncios puede tratar: registros de fallos, datos de rendimiento, identificadores de dispositivo, datos de los anuncios que ves, ubicación aproximada deducida de la IP e interacciones con la app y los anuncios, como aperturas y pulsaciones. Con el tratamiento para adolescentes (16 y 17 años) Google desactiva los anuncios personalizados y el remarketing; no detalla qué otros datos deja de tratar</td><td>Apartado 5</td></tr>
+<tr><td><strong>Google</strong> (anuncios, AdMob)</td><td>Solo si tienes 16 años o más según el año de nacimiento que indicaste, no has comprado «Sin anuncios» y hay a la vista la zona de anuncio (al pie de Inicio, Grupos, Fijos, Preferencias y las pantallas de lectura), y solo cuando el SDK de Google indica que se pueden pedir anuncios (después de tu elección en el formulario o donde no se exige). A menores de 16 años no se pone en marcha</td><td>Según la documentación de Google, el SDK de anuncios puede tratar: registros de fallos, datos de rendimiento, identificadores de dispositivo, datos de los anuncios que ves, ubicación aproximada deducida de la IP e interacciones con la app y los anuncios, como aperturas y pulsaciones. Con el tratamiento para adolescentes (16 y 17 años) Google desactiva los anuncios personalizados y el remarketing; no detalla qué otros datos deja de tratar</td><td>Apartado 5</td></tr>
 <tr><td><strong>RevenueCat</strong></td><td>Solo si tienes 16 años o más según el año de nacimiento que indicaste. Al abrir Parigo y al volver a ella, al cargar los precios, y al comprar o restaurar. También si nunca compras. A menores de 16 años no se pone en marcha</td><td>Un identificador aleatorio, los datos de tu compra (el recibo que da Apple y sus fechas), el modelo de dispositivo y la versión de iOS, la versión de Parigo, el idioma y, cuando están disponibles, el país de la tienda de aplicaciones y el identificador del dispositivo para proveedores de iOS (IDFV), el estado del permiso de seguimiento de iOS (que Parigo no pide) y los datos técnicos de la conexión, como la dirección IP</td><td>Apartado 6</td></tr>
 <tr><td><strong>Apple</strong> (App Store)</td><td>Al comprar o restaurar «Sin anuncios»</td><td>Lo que Apple gestiona con tu cuenta de Apple</td><td>Apartado 6</td></tr>
 <tr><td><strong>Servicios públicos de tipos de cambio</strong></td><td>Solo al preparar o editar un gasto o un ingreso en otra divisa, si has permitido la consulta y hace falta obtener el tipo. Puede ocurrir aunque después canceles el formulario, y a cualquier edad</td><td>La fecha y los códigos de divisa; como en toda conexión, tu dirección IP</td><td>Apartado 8</td></tr>
@@ -97,12 +118,17 @@ permiso antes) y abrir las páginas web de la política, las condiciones y el so
 <h2 id="5-anuncios-y-consentimiento">5. Anuncios y consentimiento</h2>
 <ul>
 <li><strong>Qué ves.</strong> Si tienes 16 años o más y no has comprado «Sin anuncios», un banner pequeño marcado como «Publicidad» en
-Inicio, en Análisis y en la lista de Grupos. Parigo solo pide anuncios cuando el SDK de Google indica que puede pedirlos
+una zona fija al pie de la pantalla, entre el contenido y la barra de menú, en Inicio, Grupos, Fijos y Preferencias y
+en las pantallas de lectura (por ejemplo, cuentas, movimientos, análisis, planificación y el detalle de un grupo, de
+un gasto o de un fijo). Parigo solo pide anuncios cuando el SDK de Google indica que puede pedirlos
 (después de que hayas hecho tu elección en el formulario de consentimiento, o donde el formulario no se exige). Nunca
-aparece al apuntar un gasto o un pago, al importar un fichero, al compartir, en los ajustes ni en la pantalla de la
-compra «Sin anuncios». Parigo solo solicita banners, no anuncios a pantalla completa. Parigo inicia como máximo cinco peticiones
-de anuncio por sesión de uso, con al menos un minuto entre ellas. En la unidad de banner de AdMob están desactivados
-el refresco automático y los anuncios de vídeo.</li>
+aparece en la pestaña Importar ni al importar un fichero, ni en los formularios (apuntar un gasto o un pago, crear un
+fijo o un grupo, etc.), ni en los pagos entre personas, al compartir, en las copias privadas ni en la pantalla de
+desbloqueo con frase, ni mientras haces o restauras la compra «Sin anuncios». Parigo solo solicita banners, no anuncios a
+pantalla completa. Parigo inicia como máximo veinte peticiones de anuncio por sesión de uso (es solo un freno de
+seguridad), con al menos un minuto entre ellas. Mientras un anuncio está a la vista, AdMob puede refrescarlo
+automáticamente con la tasa que decide Google («Optimizado por Google»). En la unidad de banner de AdMob están
+desactivados los anuncios de vídeo.</li>
 <li><strong>Sin personalizar.</strong> A quien ve anuncios, Parigo solicita a Google anuncios no personalizados, sin palabras clave ni
 direcciones de contenido. Parigo no le envía tus bancos, movimientos, importes, nombres ni grupos. Los anuncios no
 personalizados no se basan en tu comportamiento anterior, pero Google puede seguir usando identificadores del
@@ -140,8 +166,8 @@ entregar el anuncio, y Google los usa para fines técnicos como la seguridad y l
 La base jurídica de ese caso está en el apartado 14. Quitar los anuncios es lo que hace la compra «Sin anuncios» (apartado 6).
 Puedes cambiar tu elección en cualquier momento en Preferencias → «Opciones de privacidad de los anuncios» y en
 «Sobre este anuncio».</li>
-<li><strong>Sobre este anuncio.</strong> Junto a cada anuncio hay un botón que explica por qué lo ves y permite cambiar tu elección o
-denunciarlo. La denuncia abre tu correo (apartado 4).</li>
+<li><strong>Sobre este anuncio.</strong> Junto a cada anuncio hay un botón que explica por qué lo ves y permite cambiar tu elección,
+denunciarlo o ir a «Quitar la publicidad» (la compra, apartado 6). La denuncia abre tu correo (apartado 4).</li>
 <li><strong>Quién no ve anuncios.</strong> Las personas menores de 16 años y quien ha comprado «Sin anuncios». Si Parigo
 no puede confirmar tu compra en ese momento, tampoco pide anuncios. Tampoco hay anuncios sin haber contestado a
 la pregunta del año de nacimiento, que es obligatoria porque, sin ella, Parigo no puede saber si debe poner en marcha
@@ -189,7 +215,8 @@ ficheros al leerlo. Los movimientos importados no se envían a ningún servidor 
 dispositivo solo si tú exportas una copia privada (apartado 9) o los copias. Los extractos y los movimientos importados
 no se incorporan automáticamente a grupos compartidos. Si clasificas un abono de una cuenta común como devolución de un
 gasto relacionado con un grupo, se reduce o anula ese gasto. Ese cambio se incluye en los ficheros del grupo que decidas
-compartir.</p>
+compartir. Si guardas reglas de importación (por ejemplo, «usar siempre esta categoría»), se guardan en tu dispositivo y
+en las copias privadas que exportes, y pueden contener texto del concepto que pone el banco (apartado 3).</p>
 <h2 id="8-consulta-de-tipos-de-cambio">8. Consulta de tipos de cambio</h2>
 <ul>
 <li><strong>Cuándo:</strong> únicamente al preparar o editar un gasto o un ingreso en una divisa distinta de la de tu cuenta o grupo, si
@@ -228,9 +255,12 @@ Son tipos diarios de referencia, no los de tu banco, y puedes corregirlos.</li>
 <ul>
 <li><strong>Protección optativa:</strong> puedes proteger lo guardado con una frase que eliges tú. La frase no se guarda en ningún
 sitio. <strong>No existe recuperación de la frase:</strong> si la olvidas, nadie, tampoco nosotros, puede abrir esos datos.</li>
-<li><strong>Copia privada:</strong> puedes exportar un fichero con todo lo que has apuntado. Sale cifrada por defecto con una frase que
-escribes en ese momento; para abrirla en otro dispositivo necesitas el fichero y su frase. Puedes elegir exportarla sin
-cifrar, con un aviso: en ese caso cualquiera que tenga el fichero puede leerlo.</li>
+<li><strong>Copia privada:</strong> puedes exportar un fichero con todo lo que has apuntado, incluidas tus reglas de importación. Sale
+cifrada por defecto con una frase que escribes en ese momento; para abrirla en otro dispositivo necesitas el fichero y
+su frase. Puedes elegir exportarla sin cifrar, con un aviso: en ese caso cualquiera que tenga el fichero puede leerlo.</li>
+<li><strong>Exportar movimientos (CSV o PDF):</strong> puedes generar un CSV de tus movimientos personales, con filtros, o un informe
+del periodo en PDF. Se generan en tu dispositivo y no se envían a ningún servicio: el fichero lo guardas o lo
+compartes tú con la hoja de compartir del sistema. No va cifrado ni protegido por la frase.</li>
 <li>Lo que haces con el fichero (guardarlo en una nube, mandarlo por correo o mensajería) queda bajo las condiciones del
 servicio que elijas. Parigo no puede borrar ni recuperar esos ficheros.</li>
 <li>La protección no sustituye al bloqueo de tu dispositivo y no protege lo que ya hubieras exportado sin cifrar (CSV,
@@ -259,7 +289,7 @@ enviados a nadie. Sin permiso de seguimiento. Sin venta de tus datos. Sin pedir 
 acceso a la localización del dispositivo, a los contactos, a las fotos, al micrófono ni a la cámara. Fuera de lo descrito
 en el apartado 4, Parigo no hace más conexiones por su cuenta.</p>
 <p>En iOS Parigo no pide permiso para la cámara, el micrófono, los contactos, las fotos, la localización ni el seguimiento.
-Para elegir un fichero y para enviar uno usa el selector de ficheros y el menú de compartir del propio sistema: solo
+El único permiso que puede pedir es el de notificaciones, y solo cuando activas los recordatorios (apartado 3). Para elegir un fichero y para enviar uno usa el selector de ficheros y el menú de compartir del propio sistema: solo
 accede al fichero que tú eliges. Cuando pulsas «Pegar», Parigo lee el texto del portapapeles para ponerlo en el campo;
 iOS puede avisarte o pedirte confirmación al hacerlo. Además, tras copiar algo sensible (como una invitación) o tras
 pegarlo, Parigo puede volver a leer el portapapeles solo para comprobar si sigue igual y vaciarlo (al salir de la pantalla
