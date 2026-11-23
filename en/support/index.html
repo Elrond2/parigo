@@ -4,16 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Support — Parigo</title>
-<meta name="description" content="Parigo frequently asked questions and contact: data, passphrase protection, the &quot;No ads&quot; subscription, refunds and groups.">
+<meta name="description" content="Parigo help: data, passphrase protection, the one-off &quot;No ads&quot; purchase, restoration, refunds and groups shared through files.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#4F25A8">
 <link rel="alternate" hreflang="es" href="https://parigo.app/soporte/"><link rel="alternate" hreflang="en" href="https://parigo.app/en/support/"><link rel="alternate" hreflang="x-default" href="https://parigo.app/soporte/">
+<link rel="canonical" href="https://parigo.app/en/support/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Parigo">
 <meta property="og:title" content="Support — Parigo">
-<meta property="og:description" content="Parigo frequently asked questions and contact: data, passphrase protection, the &quot;No ads&quot; subscription, refunds and groups.">
+<meta property="og:description" content="Parigo help: data, passphrase protection, the one-off &quot;No ads&quot; purchase, restoration, refunds and groups shared through files.">
 <meta property="og:url" content="https://parigo.app/en/support/">
 <meta property="og:image" content="https://parigo.app/icon-512.png">
+<meta property="og:image:alt" content="Parigo icon">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary">
 <link rel="icon" type="image/png" sizes="48x48" href="../../favicon.png">
@@ -33,7 +35,7 @@
 <div class="envoltorio texto">
 <h1>Parigo support</h1>
 <p>Parigo is an iPhone app. Here are the answers to the most common questions. If yours is not here, write to us.</p>
-<div class="contacto">
+<div class="contacto" id="contact">
   <p><strong>Contact:</strong> <a href="mailto:soporte@parigo.app">soporte@parigo.app</a></p>
 </div>
 
@@ -42,9 +44,10 @@
   <li><a href="#data">Where is my data?</a></li>
   <li><a href="#passphrase">I have forgotten my passphrase</a></li>
   <li><a href="#new-phone">Changing phone</a></li>
-  <li><a href="#cancel">How do I cancel the "No ads" subscription?</a></li>
+  <li><a href="#first-statement">How do I import my first statement?</a></li>
+  <li><a href="#no-ads">How does "No ads" work?</a></li>
   <li><a href="#refund">How do I ask for a refund?</a></li>
-  <li><a href="#restore">Restoring purchases</a></li>
+  <li><a href="#restore">Restore purchase</a></li>
   <li><a href="#ad">I have seen an inappropriate ad</a></li>
   <li><a href="#rights">I want access to my purchase data, or its deletion</a></li>
   <li><a href="#birth-year">Why does it ask for my year of birth?</a></li>
@@ -52,34 +55,40 @@
 </ol>
 
 <h3 id="data">Where is my data?</h3>
-<p>On your device. Parigo has no user account and no server of its own where your accounts, transactions or groups are kept, so we cannot see them. The statements you import are read on the device and the imported transactions never leave it. Which technical data is sent to third parties (advertising, subscription, exchange rates) is explained in the <a href="../../en/privacy/index.html">privacy policy</a>.</p>
+<p>Your financial records (accounts, transactions and groups) are stored on your device. Statements are read locally and you review transactions before saving them. You choose whether to export files or share changes to a group. Advertising, purchase and exchange-rate lookup services are explained in the <a href="../../en/privacy/index.html">privacy policy</a>.</p>
 
 <h3 id="passphrase">I have forgotten my passphrase</h3>
-<p>The protection passphrase cannot be recovered: if you forget it, nobody, including us, can open that data. If you saved a private backup and remember the passphrase you encrypted it with, you can open it with that. That is why each private backup should be kept together with its passphrase.</p>
+<p>The protection passphrase cannot be recovered. If you forget it, we cannot open the data protected with it. You can recover what is in an earlier private backup: an encrypted backup needs its own passphrase, which may differ from the app passphrase; a backup exported without encryption needs no passphrase. Keep backups in a safe place and keep their passphrases.</p>
 
 <h3 id="new-phone">Changing phone</h3>
-<p>Before you change, make a private backup from Preferences and keep that file together with its passphrase. On the new phone, import it from within the app. Parigo's data is requested to be left out of system backups, so do not count on the phone's automatic backup bringing it across. If you reinstall or lose the phone without a private backup, you lose that data.</p>
+<p>Before you change, make a private backup from Settings → Backups and restore (in version 1.0, from the “Full private backup” section in Preferences). Keep the file in a safe place and keep its passphrase if it is encrypted.</p>
+<p>On the new phone, open Settings → Backups and restore → Restore private backup…; in version 1.0, find “Restore private backup…” in Preferences. You can also restore it from the lock screen. If the backup is encrypted, use its passphrase and follow the steps to set up local protection. Statement import does not restore private backups.</p>
+<p>Parigo’s data is requested to be left out of system backups, so do not count on the phone’s automatic backup bringing it across. If you reinstall or lose the phone without a private backup, you lose the data you have not saved in another way.</p>
 
-<h3 id="cancel">How do I cancel the "No ads" subscription?</h3>
-<p>In the subscription settings of your Apple account, or from Parigo with "Manage subscription": <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>. It stays active until the end of the period already paid. Deleting the app does <strong>not</strong> cancel the subscription: it has to be cancelled with Apple.</p>
+<h3 id="first-statement">How do I import my first statement?</h3>
+<p>In version 1.1, open the Accounts tab: you will see the Transactions screen and its “Import” button. In version 1.0, open the Import tab. Create or choose a local account, select the statement file you downloaded from your bank and review the transactions before saving the rows you choose. Parigo does not connect to your bank; check that it recognises the file format and the account’s currency.</p>
+<p>If you have a Parigo private backup instead, follow the <a href="#new-phone">backup restoration steps</a>.</p>
+
+<h3 id="no-ads"><span id="cancel"></span>How does "No ads" work?</h3>
+<p>Parigo is free and has all its features. It may show an advertising banner. “No ads” is an optional one-off purchase that removes that banner and nothing else. The price is shown in the store before you buy and is charged once to your Apple account. See the <a href="../../en/terms/index.html">terms of use</a> for details.</p>
 
 <h3 id="refund">How do I ask for a refund?</h3>
-<p>Charges and refunds are handled by Apple, not by us. You can ask at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>; Apple decides under its own rules. Cancelling the renewal is not the same as asking for a refund of a period already charged. More detail in the <a href="../../en/terms/index.html">terms of use</a>.</p>
+<p>You can request a refund from Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. See the <a href="../../en/terms/index.html">terms of use</a> for details.</p>
 
-<h3 id="restore">Restoring purchases</h3>
-<p>If you have changed phone or reinstalled Parigo, open Preferences → "No ads" and tap "Restore purchases", using the same Apple account you bought with. You do not need to create an account in Parigo. A subscription bought on Apple does not work in other stores.</p>
+<h3 id="restore">Restore purchase</h3>
+<p>If you have changed phone or reinstalled Parigo, open Settings → Remove ads → No ads and tap “Restore purchase”, using the same Apple account you bought with. In version 1.0, open Preferences and find the “No ads” section. You do not need to create an account in Parigo. A purchase made on Apple does not carry over to other stores.</p>
 
 <h3 id="ad">I have seen an inappropriate ad</h3>
 <p>Next to each ad there is an "About this ad" button that explains why you see it and lets you report it. Reporting opens your email app with a message addressed to soporte@parigo.app and sends only what you write. No filter is perfect: if you see an ad that should not appear, tell us.</p>
 
 <h3 id="rights">I want access to my purchase data, or its deletion</h3>
-<p>The data you keep in Parigo (accounts, transactions, groups) is only on your device and you control it. For the subscription and purchase data that RevenueCat processes, write to <a href="mailto:soporte@parigo.app">soporte@parigo.app</a> and include your "Support code", which is in Preferences → About, with a button to copy it. Without that code we cannot locate your record.</p>
+<p>Your financial records are stored on your device; you decide whether to export them or share changes to a group. For the purchase data that RevenueCat processes, write to <a href="mailto:soporte@parigo.app">soporte@parigo.app</a> and include your "Support code", which has a button to copy it. In Settings, scroll to the “About” group and open “Version and legal texts”; in version 1.0, find “About” in Preferences. Without that code we cannot locate your record.</p>
 
 <h3 id="birth-year">Why does it ask for my year of birth?</h3>
-<p>To decide whether Parigo may show you advertising: people under 16 are not shown any. The year is stored only on your device. The question is required to keep using the app.</p>
+<p>To apply advertising options according to age. The year is stored only on your device. The question is required to keep using the app. See the <a href="../../en/privacy/index.html">privacy policy</a> for details. If you see an ad that should not appear, <a href="#contact">contact support</a>.</p>
 
 <h3 id="groups">How do I share a group?</h3>
-<p>With an invitation link and encrypted files that you send through the channel you prefer. There is no server and no automatic sync: each person sends and receives their changes by hand. To share, you first need to turn on passphrase protection. The invitation contains the group's key: send it only to people taking part, through a private channel.</p>
+<p>Each person needs the invitation link and the welcome file. Then you send and receive changes by hand in encrypted files, through the channel you prefer. Group changes are not synced automatically. To share, you first need to turn on passphrase protection. The invitation contains the group's key: send it only to people taking part, through a private channel.</p>
 
 </div>
 </main>

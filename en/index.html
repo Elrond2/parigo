@@ -4,18 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Parigo: budgets and shared expenses for iPhone</title>
-<meta name="description" content="Parigo is an iPhone app to keep track of your accounts, budgets and shared expenses. Your data stays on your device.">
+<meta name="description" content="Budgets, shared flat expenses and statement imports from files on your iPhone. Parigo is free, with an optional one-off purchase to remove the banner.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#4F25A8">
 <link rel="alternate" hreflang="es" href="https://parigo.app/"><link rel="alternate" hreflang="en" href="https://parigo.app/en/"><link rel="alternate" hreflang="x-default" href="https://parigo.app/">
+<link rel="canonical" href="https://parigo.app/en/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Parigo">
 <meta property="og:title" content="Parigo: budgets and shared expenses for iPhone">
-<meta property="og:description" content="Parigo is an iPhone app to keep track of your accounts, budgets and shared expenses. Your data stays on your device.">
+<meta property="og:description" content="Budgets, shared flat expenses and statement imports from files on your iPhone. Parigo is free, with an optional one-off purchase to remove the banner.">
 <meta property="og:url" content="https://parigo.app/en/">
-<meta property="og:image" content="https://parigo.app/icon-512.png">
+<meta property="og:image" content="https://parigo.app/media/parigo-en.jpg">
+<meta property="og:image:alt" content="Parigo: joint account balance and your share, with example data.">
 <meta property="og:locale" content="en_GB">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="stylesheet" href="../estilo.css">
@@ -35,10 +37,12 @@
     <img class="icono" src="../icon-512.png" width="96" height="96" alt="Parigo icon">
     <h1>Parigo</h1>
     <p class="lema">Budgets and shared expenses, on your iPhone.</p>
-    <p class="lede">Your accounts, your budgets and the shared costs of your flat or trip, in one place. No sign-up: your data stays on your device and Parigo never connects to your bank.</p>
-    <p class="proximamente">Coming soon to the App Store</p>
+    <p class="lede">Your budgets, the shared costs of your flat or trip and statements imported from files, in one place. No sign-up or bank connection: your financial records are stored on your device. You choose whether to export files or share changes to a group.</p>
+    <a class="boton" href="#cuenta-comun">See a joint account</a><p class="proximamente">Coming soon to the App Store</p>
   </div>
 </section>
+
+<section class="seccion demo" aria-labelledby="cuenta-comun"><div class="envoltorio"><h2 id="cuenta-comun">Your flat’s balance and your share, separately</h2><p>In a joint account, the balance is everyone’s money. Your share reflects what you are entitled to under your agreement; you cannot always withdraw it straight away.</p><figure><img src="../media/cuenta-comun-en.webp" width="720" height="568" alt="Joint account: account balance of €510.00 and your share of €320.00, with an explanation of each figure." decoding="async"><figcaption>Joint account · Example data</figcaption></figure></div></section>
 
 <section class="seccion" aria-labelledby="que-hace">
   <div class="envoltorio">
@@ -66,7 +70,7 @@
       </article>
       <article class="tarjeta">
         <h3>Sharing, by hand and encrypted</h3>
-        <p>Share a group with an invitation link and send changes in encrypted files through the channel you prefer. There is no server and no automatic sync: each person sends and receives their changes by hand. To share, you first need to turn on passphrase protection.</p>
+        <p>Invite each person with a link and a welcome file. Then send changes in encrypted files through the channel you prefer. Group changes are not synced automatically: each person sends and receives their changes by hand. To share, you first need to turn on passphrase protection.</p>
       </article>
     </div>
   </div>
@@ -76,16 +80,16 @@
 
 <section class="seccion" aria-labelledby="privacidad">
   <div class="envoltorio">
-    <h2 id="privacidad">Your data, on your device</h2>
+    <h2 id="privacidad">Your financial records, on your device</h2>
     <div class="tarjeta">
       <ul>
-        <li>Your accounts, transactions and groups are stored on your device. There is no account to create and no server of our own where they are kept.</li>
-        <li>Optional protection with a passphrase that only you know. If you forget it, there is no way to recover it or to open that data.</li>
-        <li>Transactions imported from a statement never leave the device.</li>
-        <li>The advertising banner does not use your transactions, amounts, banks or names. Under-16s are not shown advertising.</li>
+        <li>Your accounts, transactions and groups are stored on your device. You choose whether to export files or share changes to a group.</li>
+        <li>Optional protection with a passphrase that only you know. If you forget it, it cannot be recovered. An earlier backup may help you recover what it contains; see the <a href="../en/support/index.html">frequently asked questions</a>.</li>
+        <li>Statements are read on your device and you review transactions before saving them.</li>
+        <li>The advertising banner does not use your transactions, amounts, banks or names. See the privacy policy for how advertising data is handled.</li>
         <li>If you pay in another currency, Parigo can look up that day's exchange rate. It only sends the date and the currency codes, never amounts or descriptions, and you can turn it off.</li>
       </ul>
-      <p>The full details are in the <a href="../en/privacy/index.html">privacy policy</a>.</p>
+      <p>Advertising, purchase and exchange-rate lookup services are explained in the <a href="../en/privacy/index.html">privacy policy</a>.</p>
     </div>
   </div>
 </section>
@@ -96,14 +100,13 @@
     <div class="rejilla">
       <article class="tarjeta">
         <h3>Free</h3>
-        <p class="precio">€0</p>
-        <p>Parigo is free to use and does not charge for noting down more transactions. It shows a discreet advertising banner on Home, Analysis and Groups.</p>
+        <p>Parigo is free and all its features are available without paying. It may show an advertising banner on reading screens.</p>
       </article>
       <article class="tarjeta destacada">
         <h3>No ads</h3>
-        <p class="precio">€0.99 a month or €7.99 a year</p>
-        <p>An optional subscription that removes the advertising banner; it unlocks no features. These are the base prices for Spain: in other countries Apple sets them.</p>
-        <p>It renews automatically every month or every year and is charged to your Apple account. You can cancel at any time in the subscription settings of your Apple account, and it stays active until the end of the period already paid. More information in the <a href="../en/terms/index.html">terms of use</a>.</p>
+        <p class="precio">Optional one-off payment</p>
+        <p>“No ads” removes the banner; the rest of the app is the same and free. The price is shown in the store before you buy and is charged once to your Apple account.</p>
+        <p>You can restore the purchase with the same Apple account. See the <a href="../en/terms/index.html">terms of use</a> for details.</p>
       </article>
     </div>
     <p class="aviso">Parigo does not move money, does not connect to banks and does not give financial advice. The amounts are the ones you note down or import. Available in Spanish and English.</p>

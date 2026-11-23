@@ -4,16 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Soporte — Parigo</title>
-<meta name="description" content="Preguntas frecuentes y contacto de Parigo: datos, frase de protección, suscripción «Sin anuncios», reembolsos y grupos.">
+<meta name="description" content="Ayuda de Parigo: datos, frase de protección, compra única «Sin anuncios», restauración, reembolsos y grupos compartidos por archivos.">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#4F25A8">
 <link rel="alternate" hreflang="es" href="https://parigo.app/soporte/"><link rel="alternate" hreflang="en" href="https://parigo.app/en/support/"><link rel="alternate" hreflang="x-default" href="https://parigo.app/soporte/">
+<link rel="canonical" href="https://parigo.app/soporte/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Parigo">
 <meta property="og:title" content="Soporte — Parigo">
-<meta property="og:description" content="Preguntas frecuentes y contacto de Parigo: datos, frase de protección, suscripción «Sin anuncios», reembolsos y grupos.">
+<meta property="og:description" content="Ayuda de Parigo: datos, frase de protección, compra única «Sin anuncios», restauración, reembolsos y grupos compartidos por archivos.">
 <meta property="og:url" content="https://parigo.app/soporte/">
 <meta property="og:image" content="https://parigo.app/icon-512.png">
+<meta property="og:image:alt" content="Icono de Parigo">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary">
 <link rel="icon" type="image/png" sizes="48x48" href="../favicon.png">
@@ -33,7 +35,7 @@
 <div class="envoltorio texto">
 <h1>Soporte de Parigo</h1>
 <p>Parigo es una app para iPhone. Aquí están las respuestas a las preguntas más habituales. Si no encuentras la tuya, escríbenos.</p>
-<div class="contacto">
+<div class="contacto" id="contacto">
   <p><strong>Contacto:</strong> <a href="mailto:soporte@parigo.app">soporte@parigo.app</a></p>
 </div>
 
@@ -42,9 +44,10 @@
   <li><a href="#datos">¿Dónde están mis datos?</a></li>
   <li><a href="#frase">He olvidado mi frase</a></li>
   <li><a href="#telefono">Cambio de teléfono</a></li>
-  <li><a href="#cancelar">¿Cómo cancelo la suscripción «Sin anuncios»?</a></li>
+  <li><a href="#primer-extracto">¿Cómo importo mi primer extracto?</a></li>
+  <li><a href="#sin-anuncios">¿Cómo funciona «Sin anuncios»?</a></li>
   <li><a href="#reembolso">¿Cómo pido un reembolso?</a></li>
-  <li><a href="#restaurar">Restaurar compras</a></li>
+  <li><a href="#restaurar">Restaurar compra</a></li>
   <li><a href="#anuncio">He visto un anuncio inadecuado</a></li>
   <li><a href="#derechos">Quiero acceso a mis datos de compras o su borrado</a></li>
   <li><a href="#nacimiento">¿Por qué pregunta mi año de nacimiento?</a></li>
@@ -52,34 +55,40 @@
 </ol>
 
 <h3 id="datos">¿Dónde están mis datos?</h3>
-<p>En tu dispositivo. Parigo no tiene cuenta de usuario ni un servidor propio donde guardar tus cuentas, movimientos o grupos, así que no podemos verlos. Los extractos que importas se leen en el dispositivo y los movimientos importados no salen de él. Qué datos técnicos sí se envían a terceros (publicidad, suscripción, tipos de cambio) se explica en la <a href="../privacidad/index.html">política de privacidad</a>.</p>
+<p>Tus registros financieros (cuentas, movimientos y grupos) se guardan en el dispositivo. Los extractos se leen localmente y revisas los movimientos antes de guardarlos. Tú eliges si exportas archivos o compartes cambios de un grupo. Los servicios de publicidad, compras y consulta de tipos de cambio se explican en la <a href="../privacidad/index.html">política de privacidad</a>.</p>
 
 <h3 id="frase">He olvidado mi frase</h3>
-<p>La frase de protección no se puede recuperar: si la olvidas, nadie, tampoco nosotros, puede abrir esos datos. Si guardaste una copia privada y recuerdas la frase con la que la cifraste, puedes abrirla con ella. Por eso conviene guardar cada copia privada junto con su frase.</p>
+<p>La frase de protección no se puede recuperar. Si la olvidas, no podemos abrir los datos protegidos con ella. Puedes recuperar lo que contenga una copia privada anterior: si está cifrada, necesitas la frase de esa copia, que puede ser distinta de la de la app; si la exportaste sin cifrar, no necesita frase. Guarda las copias en un lugar seguro y conserva sus frases.</p>
 
 <h3 id="telefono">Cambio de teléfono</h3>
-<p>Antes de cambiar, haz una copia privada desde Preferencias y guarda ese fichero junto con su frase. En el teléfono nuevo, impórtala desde la propia app. Los datos de Parigo se piden excluidos de las copias del sistema, así que no cuentes con que la copia automática del teléfono los traiga. Si reinstalas o pierdes el teléfono sin una copia privada, pierdes esos datos.</p>
+<p>Antes de cambiar, haz una copia privada desde Ajustes → Copias y restauración (en la versión 1.0, desde la sección «Copia privada completa» de Preferencias). Guarda el archivo en un lugar seguro y conserva su frase si está cifrado.</p>
+<p>En el teléfono nuevo, abre Ajustes → Copias y restauración → Restaurar copia privada…; en la versión 1.0, busca «Restaurar copia privada…» en Preferencias. También puedes restaurarla desde la pantalla de bloqueo. Si la copia está cifrada, usa su frase y sigue los pasos para configurar la protección local. La opción de importar extractos no restaura copias privadas.</p>
+<p>Los datos de Parigo se piden excluidos de las copias del sistema, así que no cuentes con que la copia automática del teléfono los traiga. Si reinstalas o pierdes el teléfono sin una copia privada, pierdes los datos que no hayas guardado por otra vía.</p>
 
-<h3 id="cancelar">¿Cómo cancelo la suscripción «Sin anuncios»?</h3>
-<p>En los ajustes de suscripciones de tu cuenta de Apple, o desde Parigo con «Gestionar suscripción»: <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>. Sigue activa hasta el final del periodo ya pagado. Borrar la app <strong>no</strong> cancela la suscripción: hay que cancelarla en Apple.</p>
+<h3 id="primer-extracto">¿Cómo importo mi primer extracto?</h3>
+<p>En la versión 1.1, abre la pestaña Cuentas: verás la pantalla Movimientos y su botón «Importar». En la versión 1.0, abre la pestaña Importar. Crea o elige una cuenta local, selecciona el archivo del extracto que hayas descargado de tu banco y revisa los movimientos antes de guardar las filas que elijas. Parigo no se conecta a tu banco; comprueba que reconoce el formato del archivo y la divisa de la cuenta.</p>
+<p>Si lo que tienes es una copia privada de Parigo, sigue los pasos de <a href="#telefono">restauración de copias</a>.</p>
+
+<h3 id="sin-anuncios"><span id="cancelar"></span>¿Cómo funciona «Sin anuncios»?</h3>
+<p>Parigo es gratis y tiene todas sus funciones. Puede mostrar un banner de publicidad. «Sin anuncios» es una compra opcional de pago único que quita ese banner y nada más. El precio se muestra en la tienda antes de comprar y se cobra una sola vez a tu cuenta de Apple. Consulta los detalles en las <a href="../condiciones/index.html">condiciones de uso</a>.</p>
 
 <h3 id="reembolso">¿Cómo pido un reembolso?</h3>
-<p>Los cobros y los reembolsos los gestiona Apple, no nosotros. Puedes pedirlo en <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>; Apple decide según sus normas. Cancelar la renovación no equivale a pedir el reembolso del periodo ya cobrado. Más detalle en las <a href="../condiciones/index.html">condiciones de uso</a>.</p>
+<p>Puedes solicitarlo a Apple en <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Consulta los detalles en las <a href="../condiciones/index.html">condiciones de uso</a>.</p>
 
-<h3 id="restaurar">Restaurar compras</h3>
-<p>Si has cambiado de teléfono o has reinstalado Parigo, abre Preferencias → «Sin anuncios» y pulsa «Restaurar compras», con la misma cuenta de Apple con la que compraste. No hace falta crear una cuenta en Parigo. Una suscripción comprada en Apple no vale en otras tiendas.</p>
+<h3 id="restaurar">Restaurar compra</h3>
+<p>Si has cambiado de teléfono o has reinstalado Parigo, abre Ajustes → Quitar anuncios → Sin anuncios y pulsa «Restaurar compra», con la misma cuenta de Apple con la que compraste. En la versión 1.0, abre Preferencias y busca la sección «Sin anuncios». No hace falta crear una cuenta en Parigo. La compra hecha en Apple no se traslada a otras tiendas.</p>
 
 <h3 id="anuncio">He visto un anuncio inadecuado</h3>
 <p>Junto a cada anuncio hay un botón «Sobre este anuncio» que explica por qué lo ves y permite denunciarlo. La denuncia abre tu programa de correo con un mensaje dirigido a soporte@parigo.app y solo envía lo que tú escribas. Ningún filtro es perfecto: si ves un anuncio que no debería aparecer, cuéntanoslo.</p>
 
 <h3 id="derechos">Quiero acceso a mis datos de compras o su borrado</h3>
-<p>Los datos que guardas en Parigo (cuentas, movimientos, grupos) están solo en tu dispositivo y los controlas tú. Sobre los datos de la suscripción y la compra que trata RevenueCat, escríbenos a <a href="mailto:soporte@parigo.app">soporte@parigo.app</a> e incluye tu «Código de soporte», que está en Preferencias → Acerca de, con un botón para copiarlo. Sin ese código no podemos localizar tu registro.</p>
+<p>Tus registros financieros se guardan en tu dispositivo; tú decides si los exportas o compartes cambios de un grupo. Sobre los datos de compras que trata RevenueCat, escríbenos a <a href="mailto:soporte@parigo.app">soporte@parigo.app</a> e incluye tu «Código de soporte», que tiene un botón para copiarlo. En Ajustes, baja al grupo «Acerca de» y abre «Versión y textos legales»; en la versión 1.0, busca «Acerca de» en Preferencias. Sin ese código no podemos localizar tu registro.</p>
 
 <h3 id="nacimiento">¿Por qué pregunta mi año de nacimiento?</h3>
-<p>Para decidir si Parigo puede mostrarte publicidad: a las personas menores de 16 años no se les muestra. El año se guarda solo en tu dispositivo. La pregunta es obligatoria para seguir usando la app.</p>
+<p>Para aplicar las opciones de publicidad según la edad. El año se guarda solo en tu dispositivo. La pregunta es obligatoria para seguir usando la app. Consulta los detalles en la <a href="../privacidad/index.html">política de privacidad</a>. Si ves un anuncio que no debería aparecer, <a href="#contacto">contacta con soporte</a>.</p>
 
 <h3 id="grupos">¿Cómo comparto un grupo?</h3>
-<p>Con un enlace de invitación y ficheros cifrados que envías por el canal que prefieras. No hay servidor ni sincronización automática: cada persona envía y recibe sus cambios a mano. Para compartir hay que activar antes la protección con frase. La invitación contiene la clave del grupo: envíala solo a quien participa y por un canal privado.</p>
+<p>Cada persona necesita el enlace de invitación y el archivo de bienvenida. Después, envía y recibe los cambios a mano en archivos cifrados, por el canal que prefieras. No hay sincronización automática de los cambios del grupo. Para compartir hay que activar antes la protección con frase. La invitación contiene la clave del grupo: envíala solo a quien participa y por un canal privado.</p>
 
 </div>
 </main>
